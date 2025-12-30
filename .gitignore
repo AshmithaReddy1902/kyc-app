@@ -1,0 +1,19 @@
+# OS / IDE
+.vscode/
+.idea/
+*.log
+.DS_Store
+Thumbs.db
+
+# React
+frontend/node_modules/
+frontend/build/
+frontend/dist/
+frontend/.env
+frontend/.env.local
+
+# Spring Boot
+backend/target/
+backend/.classpath
+backend/.project
+backend/.settings/
