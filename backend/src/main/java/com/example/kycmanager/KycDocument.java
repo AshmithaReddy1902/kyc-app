@@ -20,6 +20,8 @@ public class KycDocument {
     private String documentType;
     private String documentNumber;
 
+    
+
     private LocalDate issueDate;
     private LocalDate expiryDate;
     private LocalDate submittedDate;
