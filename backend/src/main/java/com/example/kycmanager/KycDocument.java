@@ -1,8 +1,12 @@
-// KycDocument.java
 package com.example.kycmanager;
 
-import jakarta.persistence.*;
 import java.time.LocalDate;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 
 @Entity
 @Table(name = "kyc_documents")
@@ -18,10 +22,11 @@ public class KycDocument {
 
     private LocalDate issueDate;
     private LocalDate expiryDate;
+    private LocalDate submittedDate;
 
     private String verificationStatus;
 
-    //  Getters and Setter methods
+    // Getters and Setter methods
 
     public Long getId() {
         return id;
@@ -69,6 +74,14 @@ public class KycDocument {
 
     public void setExpiryDate(LocalDate expiryDate) {
         this.expiryDate = expiryDate;
+    }
+
+    public LocalDate getSubmittedDate() {
+        return submittedDate;
+    }
+
+    public void setSubmittedDate(LocalDate submittedDate) {
+        this.submittedDate = submittedDate;
     }
 
     public String getVerificationStatus() {
